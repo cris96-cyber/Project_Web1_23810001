@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web1 Project - Blogs</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Blogs</h1>
+          <p>
+            Read articles by category with a consistent card layout and connected detail
+            pages.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Latest articles</h2>
+            <p>Choose a category to focus on a specific content group.</p>
+          </div>
+          <div class="filterbar" id="blogCategories"></div>
+          <div class="grid" id="blogGrid"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", renderBlogs);
+    </script>
+  </body>
+</html>

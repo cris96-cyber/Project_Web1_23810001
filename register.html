@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>Register | Web1 Project</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-card">
+            <span class="auth-badge">Register</span>
+
+            <h1>Create an account</h1>
+
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label for="registerEmail">Your email</label>
+
+                    <input type="email"
+                           id="registerEmail"
+                           name="email"
+                           placeholder="email@example.com"
+                           required />
+                </div>
+
+                <div class="form-group">
+                    <label for="registerName">Your name</label>
+
+                    <input type="text"
+                           id="registerName"
+                           name="name"
+                           placeholder="Your full name"
+                           required />
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+
+                    <input type="password"
+                           id="registerPassword"
+                           name="password"
+                           placeholder="At least 6 characters"
+                           required />
+                </div>
+
+                <div class="form-group">
+                    <label for="registerConfirmPassword">
+                        Confirm password
+                    </label>
+
+                    <input type="password"
+                           id="registerConfirmPassword"
+                           name="confirmPassword"
+                           placeholder="Re-enter password"
+                           required />
+                </div>
+
+                <label class="check-line">
+                    <input type="checkbox"
+                           id="acceptTerms"
+                           name="terms"
+                           required />
+
+                    <span>I accept the Terms and Conditions</span>
+                </label>
+
+                <button type="submit" class="auth-submit">
+                    Create an account
+                </button>
+            </form>
+
+            <p class="auth-note">
+                Already have an account?
+                <a href="login.html" class="auth-link">
+                    Login here →
+                </a>
+            </p>
+
+            <a href="index.html" class="auth-back">
+                ← Back to homepage
+            </a>
+        </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

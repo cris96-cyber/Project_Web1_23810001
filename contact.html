@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web1 Project - Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Get in touch</span>
+          <h1>Contact Us</h1>
+          <p>
+            Send a validated message. The submitted data is stored locally with JavaScript
+            localStorage.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="info-card">
+            <span class="eyebrow">Contact info</span>
+            <h3>Address:</h3>
+            <div id="address"></div>
+            <h3>Phone:</h3>
+            <div id="phones"></div>
+            <h3>Email:</h3>
+            <p id="email"></p>
+            <h3>Miscellaneous information:</h3>
+            <p>
+              For any comments, suggestions, or questions, please use our Contact Us form
+              to get in touch. We value your input and are here to help with any concerns
+              you may have.
+            </p>
+          </aside>
+          <form class="form" id="contactForm">
+            <span class="eyebrow">Message form</span>
+            <p class="muted">All fields with an * are required.</p>
+            <label
+              >* Your name<input
+                name="name"
+                type="text"
+                placeholder="Enter your name" /></label
+            ><label
+              >* Your Email<input
+                name="email"
+                type="email"
+                placeholder="Enter your email" /></label
+            ><label
+              >* Your Subject<input
+                name="subject"
+                type="text"
+                placeholder="Enter subject" /></label
+            ><label
+              >* Your message<textarea
+                name="message"
+                placeholder="Write your message"
+              ></textarea></label
+            ><button class="btn">Send message to us</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", renderContact);
+    </script>
+  </body>
+</html>

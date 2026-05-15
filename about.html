@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web1 Project - About</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>
+            Project overview, vision, testimonials and team are organized into a clean
+            storytelling layout.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Who we are</h2>
+            <p>
+              The about section uses a larger media block to create better balance and
+              visual depth.
+            </p>
+          </div>
+          <div class="about-feature" id="aboutMain"></div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Vision</h2>
+            <p>Vision cards explain the purpose and values of the website.</p>
+          </div>
+          <div class="grid" id="visions"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">Feedback</span>
+            <h2>Testimonials</h2>
+            <p>Short feedback blocks styled consistently with the rest of the website.</p>
+          </div>
+          <div class="grid" id="testimonials"></div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-title">
+            <span class="eyebrow">People</span>
+            <h2>Our Team</h2>
+            <p>Team members are displayed in a balanced responsive grid.</p>
+          </div>
+          <div class="grid four" id="team"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", renderAbout);
+    </script>
+  </body>
+</html>
