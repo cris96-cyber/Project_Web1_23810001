@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web1 Project - Homepage</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+      <main>
+          <section class="hero hero-carousel" aria-label="Homepage slideshow">
+              <button class="hero-arrow hero-prev"
+                      id="heroPrev"
+                      type="button"
+                      aria-label="Previous slide">
+                  ‹
+              </button>
+              <div class="container hero-center">
+                  <div class="hero-slider" id="heroSlider" aria-live="polite">
+                      <div class="hero-slide-index" id="heroKicker">Slide 01</div>
+                      <h1 id="heroTitle">Web Development <span>for everyone</span></h1>
+                      <p id="heroDesc">Đồ án Web1 được xây dựng bằng HTML, CSS và JavaScript.</p>
+                      <div class="hero-actions">
+                          <a id="heroPrimary" href="gallery.html" class="btn">See more</a>
+                      </div>
+                      <div class="hero-dots" id="heroDots" aria-label="Hero slide controls"></div>
+                  </div>
+              </div>
+              <button class="hero-arrow hero-next"
+                      id="heroNext"
+                      type="button"
+                      aria-label="Next slide">
+                  ›
+              </button>
+          </section>
+
+          <section class="section">
+              <div class="container">
+                  <div class="balanced-head">
+                      <div class="section-title">
+                          <h2>Products</h2>
+                          <p>
+                              Core product categories are presented with consistent card style, spacing
+                              and hover interaction.
+                          </p>
+                      </div>
+                      <a href="gallery.html" class="btn outline">View gallery</a>
+                  </div>
+                  <div class="grid four" id="products"></div>
+              </div>
+          </section>
+
+          <section class="section alt">
+              <div class="container">
+                  <div class="section-title">
+                      <h2>About us</h2>
+
+                  </div>
+                  <div class="about-feature" id="aboutPreview"></div>
+              </div>
+          </section>
+
+          <section class="section">
+              <div class="container">
+                  <div class="newsletter">
+                      <div>
+                          <span class="eyebrow">Newsletter</span>
+                          <h2>Stay updated with Web1 Project</h2>
+                          <p>Sign up to receive updates, new content and project announcements.</p>
+                      </div>
+                      <form id="newsletterForm">
+                          <input id="newsletterEmail"
+                                 type="email"
+                                 placeholder="Please, write an e-mail" />
+                          <button class="btn">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+          </section>
+
+          <section class="section alt">
+              <div class="container">
+                  <div class="balanced-head">
+                      <div class="section-title">
+                          <h2>News</h2>
+
+                      </div>
+                      <a href="blogs.html" class="btn outline">Read blogs</a>
+                  </div>
+                  <div class="grid" id="news"></div>
+              </div>
+          </section>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script src="js/data.js"></script>
+      <script src="js/supabase-config.js"></script>
+      <script src="js/supabase-service.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+          document.addEventListener("DOMContentLoaded", renderHome);
+      </script>
+  </body>
+</html>
